@@ -77,15 +77,15 @@
     "webpack": "4.29.6",
     "webpack-dev-server": "3.2.1",
     "webpack-manifest-plugin": "2.0.4",
-    "workbox-webpack-plugin": "4.2.0"
-  },
-  "devDependencies": {
-    "react": "^16.8.4",
-    "react-dom": "^16.8.4",
+    "workbox-webpack-plugin": "4.2.0",
     "react-redux": "^7.0.3",
     "redux": "^4.0.1",
     "redux-logger": "^3.0.6",
     "redux-saga": "^1.0.2"
+  },
+  "devDependencies": {
+    "react": "^16.8.4",
+    "react-dom": "^16.8.4"
   },
   "optionalDependencies": {
     "fsevents": "2.0.6"
