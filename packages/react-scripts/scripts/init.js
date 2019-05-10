@@ -22,6 +22,7 @@ const spawn = require('react-dev-utils/crossSpawn');
 const { defaultBrowsers } = require('react-dev-utils/browsersHelper');
 const os = require('os');
 const verifyTypeScriptSetup = require('./utils/verifyTypeScriptSetup');
+const bo = require('./utils/bigorange');
 
 function isInGitRepository() {
   try {
@@ -263,6 +264,8 @@ module.exports = function(
   }
   console.log();
   console.log('Happy hacking!');
+  console.log('powered  by:');
+  bo();
 };
 
 function isReactInstalled(appPackage) {
