@@ -264,7 +264,7 @@ module.exports = function(
   }
   console.log();
   console.log('Happy hacking!');
-  console.log('powered  by:');
+  console.log('powered by:');
   bo();
 };
 
