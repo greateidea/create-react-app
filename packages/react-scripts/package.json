@@ -1,7 +1,7 @@
 {
   "name": "bigorange-react-scripts",
   "description": "BigOrange Configuration and scripts for Create React App.",
-  "version": "3.0.5",
+  "version": "3.0.6",
   "repository": {
     "type": "git",
     "url": "https://github.com/greateidea/create-react-app.git",
