@@ -1,9 +1,8 @@
-import { all  } from 'redux-saga/effects';
-import {addTodoSaga, reduceTodoSaga} from './todoListSaga';
+import { all } from 'redux-saga/effects';
+import { todoSaga } from './todoListSaga';
 
 export default function* rootSaga() {
     yield all([
-        addTodoSaga(),
-        reduceTodoSaga()
+        todoSaga(),
     ])
 }

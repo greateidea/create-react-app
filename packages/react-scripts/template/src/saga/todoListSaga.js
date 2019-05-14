@@ -1,4 +1,5 @@
-import { put, takeEvery } from 'redux-saga/effects';
+import { put, takeEvery, call } from 'redux-saga/effects';
+import { getList } from '../service/api';
 
 function* addTodo(action) {
     console.log('add todoList by saga, action: ', action);
@@ -10,10 +11,15 @@ function* reduceTodo(action) {
     yield put({type: "REDUCE_TODO", id: action.id, text: action.text});
 }
 
-export function* addTodoSaga() {
-    yield takeEvery("ADD_TODO_SAGA", addTodo);
+function* getListByApi() {
+    console.log('get list by saga, action: ');
+    const result = yield call(getList);
+    console.log('result', result);
+    yield put({type: 'GET_LIST_FROM_API', records: result.records});
 }
 
-export function* reduceTodoSaga() {
+export function* todoSaga() {
+    yield takeEvery("GET_LIST_SAGA", getListByApi);
+    yield takeEvery("ADD_TODO_SAGA", addTodo);
     yield takeEvery("REDUCE_TODO_SAGA", reduceTodo);
 }

@@ -1,7 +1,7 @@
 {
   "name": "bigorange-react-scripts",
   "description": "BigOrange Configuration and scripts for Create React App.",
-  "version": "3.0.7",
+  "version": "3.0.8",
   "repository": {
     "type": "git",
     "url": "https://github.com/greateidea/create-react-app.git",
@@ -81,7 +81,8 @@
     "react-redux": "^7.0.3",
     "redux": "^4.0.1",
     "redux-logger": "^3.0.6",
-    "redux-saga": "^1.0.2"
+    "redux-saga": "^1.0.2",
+    "qs": "^6.7.0"
   },
   "devDependencies": {
     "react": "^16.8.4",

@@ -264,6 +264,7 @@ module.exports = function(
   }
   console.log();
   console.log('Happy hacking!');
+  console.log(chalk.cyan(`add "proxy": "http://localhost:3000" to package.json if your async api request not word`));
   console.log('powered by:');
   bo();
 };

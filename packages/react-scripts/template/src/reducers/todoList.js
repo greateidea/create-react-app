@@ -12,6 +12,8 @@ const todoList = (state = initialState, action) => {
             ];
         case 'REDUCE_TODO':
             return state.filter((item, index) => index < state.length - 1);
+        case 'GET_LIST_FROM_API':
+            return [...state, ...action.records];
         default:
             return state
     }

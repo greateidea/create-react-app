@@ -17,3 +17,7 @@ export const addActionForSaga = (id, text) => ({
 export const reduceActionForSaga = (id, text) => ({
     type: 'REDUCE_TODO_SAGA',
 });
+
+export const getListForSaga = (id, text) => ({
+    type: 'GET_LIST_SAGA',
+});
